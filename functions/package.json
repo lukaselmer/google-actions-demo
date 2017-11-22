@@ -1,11 +1,10 @@
 {
   "name": "dialogflowFirebaseFulfillment",
-  "description":
-    "This is the default fulfillment for a Dialogflow agents using Cloud Functions for Firebase",
+  "description": "This is the default fulfillment for a Dialogflow agents using Cloud Functions for Firebase",
   "author": "Lukas Elmer <lukas.elmer@gmail.com>",
   "scripts": {
     "shell": "firebase experimental:functions:shell",
-    // "start": "npm run shell",
+    "start-shell": "npm run shell",
     "logs": "firebase functions:log",
     "serve": "firebase serve --only functions:dialogflowFirebaseFulfillment",
     "start": "firebase serve --only functions:dialogflowFirebaseFulfillment",

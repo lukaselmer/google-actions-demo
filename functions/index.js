@@ -9,7 +9,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest(
     );
     console.log("Dialogflow Request body: " + JSON.stringify(request.body));
     if (request.body.result) {
-      console.error('Wrong API Version (V1): processV1Request does not exist');
+      console.error("Wrong API Version (V1): processV1Request does not exist");
     } else if (request.body.queryResult) {
       processV2Request(request, response);
     } else {
@@ -50,9 +50,28 @@ function processV2Request(request, response) {
       // Use the Actions on Google lib to respond to Google requests; for other requests use JSON
       sendResponse("I'm having trouble, can you try that again?"); // Send simple response to user
     },
+    rollTheDice: () => {
+      const attendees = [
+        "TODO"
+      ];
+      const winner = attendees[Math.floor(Math.random() * attendees.length)];
+
+      const responseToUser = {
+        outputContexts: [
+          {
+            name: `${session}/contexts/winner`,
+            lifespanCount: 100,
+            parameters: { winner: winner }
+          }
+        ],
+        fulfillmentMessages: richResponsesV2
+        // fulfillmentText: "Sure! Rolling the dice... Done!"
+      };
+      sendResponse(responseToUser);
+    },
     // Default handler for unknown or undefined actions
     default: () => {
-      let responseToUser = {
+      const responseToUser = {
         //fulfillmentMessages: richResponsesV2, // Optional, uncomment to enable
         //outputContexts: [{ 'name': `${session}/contexts/weather`, 'lifespanCount': 2, 'parameters': {'city': 'Rome'} }], // Optional, uncomment to enable
         fulfillmentText:
@@ -94,33 +113,25 @@ function processV2Request(request, response) {
 }
 const richResponsesV2 = [
   {
-    platform: "ACTIONS_ON_GOOGLE",
+    platform: "PLATFORM_UNSPECIFIED",
     simple_responses: {
       simple_responses: [
         {
-          text_to_speech: "Spoken simple response",
-          display_text: "Displayed simple response"
+          text_to_speech:
+            '<speak>Sure! Rolling the dice... <audio clipBegin="10s" clipEnd="16s" src="https://actions.google.com/sounds/v1/cartoon/drum_roll.ogg">drumroll</audio></speak>',
+          display_text: "Sure! Rolling the dice... Done."
         }
       ]
     }
   },
   {
     platform: "ACTIONS_ON_GOOGLE",
-    basic_card: {
-      title: "Title: this is a title",
-      subtitle: "This is an subtitle.",
-      formatted_text:
-        "Body text can include unicode characters including emoji 📱.",
-      image: {
-        image_uri:
-          "https://developers.google.com/actions/images/badges/XPM_BADGING_GoogleAssistant_VER.png"
-      },
-      buttons: [
+    simple_responses: {
+      simple_responses: [
         {
-          title: "This is a button",
-          open_uri_action: {
-            uri: "https://assistant.google.com/"
-          }
+          text_to_speech:
+            '<speak>Sure! Rolling the dice... <audio clipBegin="10s" clipEnd="16s" src="https://actions.google.com/sounds/v1/cartoon/drum_roll.ogg">drumroll</audio></speak>',
+          display_text: "Sure! Rolling the dice... Done."
         }
       ]
     }
