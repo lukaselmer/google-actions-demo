@@ -4,7 +4,9 @@ const functions = require("firebase-functions");
 const DialogflowApp = require("actions-on-google").DialogflowApp;
 
 const attendees = [
-  "TODO"
+  "John Doe",
+  "Chuck Norris",
+  "Mickey Mouse"
 ];
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(
