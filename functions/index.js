@@ -3,11 +3,7 @@
 const functions = require("firebase-functions");
 const DialogflowApp = require("actions-on-google").DialogflowApp;
 
-const attendees = [
-  "John Doe",
-  "Chuck Norris",
-  "Mickey Mouse"
-];
+const attendees = ["John Doe", "Chuck Norris", "Mickey Mouse"];
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(
   (request, response) => {
@@ -86,7 +82,7 @@ function processV2Request(request, response) {
     }
   };
 
-  const actionHandler = actionHandlers[action] || actionHandlers['default']
+  const actionHandler = actionHandlers[action] || actionHandlers["default"];
   actionHandler();
 }
 
