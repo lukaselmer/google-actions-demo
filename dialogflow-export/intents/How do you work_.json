@@ -1,0 +1,28 @@
+{
+  "id": "018e9b0a-644b-4b90-9e44-b2fd84a36f28",
+  "name": "How do you work?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "You can ask me who can take me home. Just ask who who the winner is!"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1511371181,
+  "fallbackIntent": false,
+  "events": []
+}

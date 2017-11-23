@@ -1,0 +1,29 @@
+{
+  "id": "51b1a7a8-2307-4b72-8e38-4a40692f5c8d",
+  "name": "Roll the dice",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "rollTheDice",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1511356934,
+  "fallbackIntent": false,
+  "events": []
+}

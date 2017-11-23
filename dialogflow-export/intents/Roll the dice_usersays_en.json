@@ -1,0 +1,49 @@
+[
+  {
+    "id": "bd27f2e2-b37a-4f7a-a130-5a5d872d9168",
+    "data": [
+      {
+        "text": "Roll",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "c56b922e-1e07-4435-889e-2cc56f859a30",
+    "data": [
+      {
+        "text": "Start the lottery",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1511356934
+  },
+  {
+    "id": "3b91ec76-a7ca-4ea8-a3da-7626b4c4fcad",
+    "data": [
+      {
+        "text": "Select a winner",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1511356934
+  },
+  {
+    "id": "0756b85f-2778-4c12-846b-0ec3f1d37fd8",
+    "data": [
+      {
+        "text": "Roll the dice",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1511356934
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "d6ff6c80-40d9-4f15-9eea-bff3be6a67a4",
+    "data": [
+      {
+        "text": "Who has won the lottery?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "f0b0a5b6-e6b7-478e-ac6d-80f6148708b7",
+    "data": [
+      {
+        "text": "Who is the winner?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "0c52ec86-988d-491d-9e81-73a4f66fc45b",
+    "data": [
+      {
+        "text": "Who won the lottery?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1511358997
+  },
+  {
+    "id": "93f71472-50f3-4162-bdc8-ac190a3adb1d",
+    "data": [
+      {
+        "text": "Who won?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1511358997
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "id": "57e21aca-1908-46b7-9d97-136f17f75257",
+  "name": "Who won? (unknown winner)",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "I don\u0027t know yet. Roll the dice first, please."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1511358997,
+  "fallbackIntent": false,
+  "events": []
+}

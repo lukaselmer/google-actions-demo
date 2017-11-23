@@ -1,0 +1,50 @@
+{
+  "id": "b9af2dcd-cb78-4936-9339-a84d9e5f199b",
+  "name": "Who won? (known winner)",
+  "auto": true,
+  "contexts": [
+    "winner"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "winner",
+          "parameters": {},
+          "lifespan": 100
+        }
+      ],
+      "parameters": [
+        {
+          "id": "c0b52d47-29b0-47c1-a13a-8a272dcca124",
+          "required": false,
+          "name": "winner",
+          "value": "#winner.winner",
+          "prompts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "The winner is #winner.winner! Congratulations!",
+            "#winner.winner is the winner! Congratulations!",
+            "#winner.winner won! Congratulations!"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1511356821,
+  "fallbackIntent": false,
+  "events": []
+}
